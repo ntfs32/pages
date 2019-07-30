@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gois.top</id>
-    <title>Gridea</title>
-    <updated>2019-07-30T07:43:53.603Z</updated>
+    <title>Shaddock</title>
+    <updated>2019-07-30T08:02:25.663Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gois.top"/>
     <link rel="self" href="https://gois.top/atom.xml"/>
     <subtitle>温故而知新</subtitle>
     <logo>https://gois.top/images/avatar.png</logo>
     <icon>https://gois.top/favicon.ico</icon>
-    <rights>All rights reserved 2019, Gridea</rights>
+    <rights>All rights reserved 2019, Shaddock</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://gois.top/post/hello-gridea</id>
