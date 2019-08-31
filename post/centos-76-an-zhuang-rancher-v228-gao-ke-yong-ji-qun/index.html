@@ -1,22 +1,100 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://gois.top</id>
-    <title>Shaddock</title>
-    <updated>2019-08-31T03:19:10.959Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://gois.top"/>
-    <link rel="self" href="https://gois.top/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
-    <logo>https://gois.top/images/avatar.png</logo>
-    <icon>https://gois.top/favicon.ico</icon>
-    <rights>All rights reserved 2019, Shaddock</rights>
-    <entry>
-        <title type="html"><![CDATA[CentOS 7.6安装rancher V2.2.8 高可用集群]]></title>
-        <id>https://gois.top/post/centos-76-an-zhuang-rancher-v228-gao-ke-yong-ji-qun</id>
-        <link href="https://gois.top/post/centos-76-an-zhuang-rancher-v228-gao-ke-yong-ji-qun">
-        </link>
-        <updated>2019-08-31T03:18:37.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="centos-76安装rancher-v228-高可用集群">CentOS 7.6安装rancher V2.2.8 高可用集群</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>CentOS 7.6安装rancher V2.2.8 高可用集群 | Shaddock</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://gois.top/favicon.ico?v=1567221534836">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://gois.top/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  </head>
+  <body>
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://gois.top">Shaddock</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+        
+          <li>
+            
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>CentOS 7.6安装rancher V2.2.8 高可用集群</h1>
+            <p class="article-meta">
+              2019-08-31
+              
+            </p>
+            
+            <div class="post-content">
+              <h1 id="centos-76安装rancher-v228-高可用集群">CentOS 7.6安装rancher V2.2.8 高可用集群</h1>
 <ul>
 <li>使用GCP主机作为安装示例</li>
 </ul>
@@ -479,59 +557,136 @@ kubectl -n cattle-system scale --replicas=3 deploy rancher
 </code></pre>
 </li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Postgres常用操作]]></title>
-        <id>https://gois.top/post/postgres-chang-yong-cao-zuo</id>
-        <link href="https://gois.top/post/postgres-chang-yong-cao-zuo">
-        </link>
-        <updated>2019-07-30T09:24:37.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="查看库所有表大小">查看库所有表大小</h2>
-<pre><code class="language-sql">--数据库中单个表的大小（不包含索引）
-select pg_size_pretty(pg_relation_size('表名'));
 
---查出所有表（包含索引）并排序
-SELECT table_schema || '.' || table_name AS table_full_name, pg_size_pretty(pg_total_relation_size('&quot;' || table_schema || '&quot;.&quot;' || table_name || '&quot;')) AS size
-FROM information_schema.tables
-ORDER BY
-pg_total_relation_size('&quot;' || table_schema || '&quot;.&quot;' || table_name || '&quot;') DESC limit 20
+            </div>
+          </article>
+        </div>
+        <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://gois.top/post/postgres-chang-yong-cao-zuo">
+                <h3 class="post-title">
+                  Postgres常用操作
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
+          
+            <div class="paper" data-aos="fade-in">
+              <div id="gitalk-container"></div>
+            </div>
+          
 
---查出表大小按大小排序并分离data与index
-SELECT
-table_name,
-pg_size_pretty(table_size) AS table_size,
-pg_size_pretty(indexes_size) AS indexes_size,
-pg_size_pretty(total_size) AS total_size
-FROM (
-SELECT
-table_name,
-pg_table_size(table_name) AS table_size,
-pg_indexes_size(table_name) AS indexes_size,
-pg_total_relation_size(table_name) AS total_size
-FROM (
-SELECT ('&quot;' || table_schema || '&quot;.&quot;' || table_name || '&quot;') AS table_name
-FROM information_schema.tables
-) AS all_tables
-ORDER BY total_size DESC
-) AS pretty_sizes
-</code></pre>
-<h2 id="设置关闭postgres默认的分页查询">设置关闭postgres默认的分页查询</h2>
-<pre><code>\set pager off
-</code></pre>
-<h2 id="唯一key重复数据查询">唯一key重复数据查询</h2>
-<pre><code>select * from health_report where exists(select null from (select client_id,ukey from health_report group by client_id,ukey having count(*) &gt; 1)tbl_temp where (tbl_temp.client_id=health_report.client_id and tbl_temp.ukey=health_report.ukey) or (tbl_temp.client_id is null and health_report.client_id is null) or (tbl_temp.ukey is null and health_report.ukey is null)) ;
-</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://gois.top/post/hello-gridea</id>
-        <link href="https://gois.top/post/hello-gridea">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></content>
-    </entry>
-</feed>
+          
+        
+      </div>
+
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://gois.top/images/avatar.png?v=1567221534836" class="no-responsive avatar">
+    <div class="text-muted">温故而知新</div>
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://gois.top/post/centos-76-an-zhuang-rancher-v228-gao-ke-yong-ji-qun">CentOS 7.6安装rancher V2.2.8 高可用集群</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://gois.top/post/postgres-chang-yong-cao-zuo">Postgres常用操作</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://gois.top/post/hello-gridea">Hello Gridea</a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://gois.top/tag/BiT8Hc9An" class="badge ">
+          Gridea
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://gois.top/atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '9be1a9794378072d78ce',
+        clientSecret: '37688a5989a865cc7033a5543bb5b4fabc5942a7',
+        repo: 'pages',
+        owner: 'ntfs32',
+        admin: ['ntfs32'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
